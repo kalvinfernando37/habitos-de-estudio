@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1"><stop offset="0" stop-color="#60a5fa"/><stop offset="1" stop-color="#7dd3fc"/></linearGradient>
+    <filter id="f1" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="18" result="b"/>
+      <feBlend in="SourceGraphic" in2="b"/>
+    </filter>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#g1)"/>
+  <g transform="translate(120,120)" filter="url(#f1)">
+    <rect x="0" y="0" rx="24" ry="24" width="960" height="560" fill="#ffffff" opacity="0.06"/>
+  </g>
+  <g transform="translate(80,140)">
+    <circle cx="180" cy="120" r="90" fill="#ffffff" opacity="0.12"/>
+    <rect x="340" y="40" width="420" height="300" rx="18" fill="#ffffff" opacity="0.18"/>
+    <g transform="translate(80,320)">
+      <rect x="0" y="0" width="380" height="28" rx="8" fill="#ffffff" opacity="0.18"/>
+      <rect x="0" y="46" width="240" height="18" rx="6" fill="#ffffff" opacity="0.12"/>
+    </g>
+  </g>
+  <g transform="translate(760,560)" opacity="0.9">
+    <text x="0" y="0" font-family="Arial" font-size="36" fill="#ffffff">Aprender en comunidad</text>
+  </g>
+</svg>

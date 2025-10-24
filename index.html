@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Importancia de los hábitos de estudio y aprendizaje</title>
+  <meta name="description" content="Página educativa que explica la importancia de los hábitos de estudio y aprendizaje, con enfoque en su impacto social y comunitario." />
+  <style>
+    :root{--accent:#0ea5e9;--muted:#475569;--bg:#f8fafc;--card:#ffffff;--soft:#eef2ff}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial; margin:0; background:linear-gradient(180deg,#f8fafc,#ffffff); color:#0f1724; line-height:1.5}
+    header{background:linear-gradient(90deg, rgba(14,165,233,0.12), rgba(99,102,241,0.06)); padding:28px 20px; position:sticky; top:0; z-index:10}
+    .container{max-width:1100px;margin:0 auto;padding:20px}
+    nav{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:52px;height:52px;border-radius:12px;background:var(--accent);display:grid;place-items:center;color:#fff;font-weight:700;box-shadow:0 6px 18px rgba(14,165,233,0.18)}
+    .nav-links{display:flex;gap:12px}
+    .nav-links a{color:var(--muted);text-decoration:none;padding:8px 12px;border-radius:10px;transition:all .28s ease}
+    .nav-links a:hover{background:var(--soft);color:var(--accent);transform:translateY(-2px)}
+    .hero{display:grid;grid-template-columns:1fr;gap:18px;padding:26px 0;align-items:center}
+    .hero h1{margin:0;font-size:clamp(1.6rem,3vw,2.4rem)}
+    .lead{color:var(--muted)}
+    .cta{margin-top:8px}
+    .btn{background:var(--accent);color:#fff;padding:10px 14px;border-radius:12px;text-decoration:none;display:inline-block;box-shadow:0 6px 18px rgba(14,165,233,0.12)}
+    main{padding:18px 0}
+    section.card{background:var(--card);padding:22px;border-radius:16px;box-shadow:0 8px 30px rgba(15,23,42,0.04);margin-bottom:18px;opacity:0;transform:translateY(12px);animation:fadeInUp .6s forwards;animation-delay:var(--delay,0s)}
+    h2{margin-top:0}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+    ul{margin:0;padding-left:18px}
+    footer{padding:20px 0;color:var(--muted);font-size:0.95rem}
+    .small{font-size:0.95rem;color:var(--muted)}
+    .examples .example{padding:14px;border-radius:12px;background:linear-gradient(180deg,#fff,#fbfdff);border:1px solid #eef6ff;transition:transform .28s ease}
+    .examples .example:hover{transform:translateY(-6px)}
+    .resources a{display:block;margin-bottom:8px;color:var(--accent);text-decoration:none}
+    .reflect{background:linear-gradient(180deg,#ffffff,#fbfdff);padding:14px;border-radius:12px;border-left:4px solid #dbeafe}
+    .toc{background:#fff;border-radius:12px;padding:12px;border:1px solid #eef6ff}
+    img.responsive{width:100%;height:auto;border-radius:12px;margin-top:12px;box-shadow:0 10px 24px rgba(2,6,23,0.06)}
+    @media(min-width:900px){.hero{grid-template-columns:1fr 380px}}
+    a:focus, button:focus{outline:3px solid rgba(14,165,233,0.12);outline-offset:4px}
+    @keyframes fadeInUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+    /* stagger delays */
+    section.card:nth-of-type(1){--delay:0.06s}
+    section.card:nth-of-type(2){--delay:0.12s}
+    section.card:nth-of-type(3){--delay:0.18s}
+    section.card:nth-of-type(4){--delay:0.24s}
+    section.card:nth-of-type(5){--delay:0.30s}
+    /* small screens tweaks */
+    @media(max-width:420px){.nav-links{display:none} .logo{width:44px;height:44px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav aria-label="Navegación principal">
+        <div class="brand">
+          <div class="logo" aria-hidden>HF</div>
+          <div>
+            <strong>Hábitos de Estudio</strong>
+            <div class="small">Importancia y impacto en la comunidad</div>
+          </div>
+        </div>
+        <div class="nav-links" role="navigation">
+          <a href="#inicio">Inicio</a>
+          <a href="#definicion">¿Qué es?</a>
+          <a href="#importancia">Importancia</a>
+          <a href="#ejemplos">Ejemplos</a>
+          <a href="#recursos">Recursos</a>
+        </div>
+      </nav>
+
+      <div class="hero">
+        <div>
+          <h1 id="inicio">La importancia de los hábitos de estudio y aprendizaje</h1>
+          <p class="lead">Los hábitos de estudio transforman el rendimiento y la vida comunitaria. Esta guía muestra por qué importan y cómo promoverlos en tu entorno.</p>
+          <p class="cta"><a class="btn" href="#definicion">Comenzar</a> <a style="margin-left:8px;color:var(--muted)" href="#recursos">Ver recursos</a></p>
+          <img class="responsive" src="images/hero.svg" alt="Ilustración: personas aprendiendo en comunidad"/>
+        </div>
+
+        <aside class="card" aria-labelledby="resumen">
+          <h3 id="resumen">Objetivo</h3>
+          <p class="small">Diseñar una página educativa que explique la importancia de los hábitos de estudio y aprendizaje y su impacto social, con ejemplos y recursos prácticos.</p>
+          <div style="margin-top:12px" class="toc">
+            <strong>Secciones</strong>
+            <ul>
+              <li>Inicio</li>
+              <li>¿Qué es?</li>
+              <li>¿Por qué es importante?</li>
+              <li>Ejemplos actuales</li>
+              <li>Conclusión y recursos</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="definicion" class="card">
+      <h2>¿Qué es un hábito de estudio?</h2>
+      <p>Un <strong>hábito de estudio</strong> es una rutina que facilita la organización del tiempo, la retención y la aplicación del conocimiento. Incorporarlos en programas hace el aprendizaje más eficiente y sostenible.</p>
+      <img class="responsive" src="images/definicion.svg" alt="Ilustración: estudiantes organizando su estudio"/>
+
+      <div class="grid" style="margin-top:12px">
+        <div>
+          <h3>Componentes</h3>
+          <ul>
+            <li>Planificación y objetivos claros.</li>
+            <li>Técnicas de concentración y manejo del tiempo.</li>
+            <li>Práctica deliberada y repaso espaciado.</li>
+            <li>Ambiente y recursos adecuados.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Beneficios personales</h3>
+          <ul>
+            <li>Mejor retención y comprensión.</li>
+            <li>Menor estrés y procrastinación.</li>
+            <li>Mayor confianza y autonomía en el aprendizaje.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="importancia" class="card">
+      <h2>¿Por qué son importantes en la comunidad?</h2>
+      <p>Los hábitos de estudio fortalecen el capital humano y la cohesión social: más personas capacitadas implican decisiones mejor informadas y proyectos comunitarios más sólidos.</p>
+      <img class="responsive" src="images/importancia.svg" alt="Ilustración: taller comunitario"/>
+
+      <div class="grid" style="margin-top:12px">
+        <div>
+          <h3>Educación y equidad</h3>
+          <p class="small">Promueven acceso a oportunidades educativas más igualitarias y reducen brechas de aprendizaje.</p>
+        </div>
+        <div>
+          <h3>Economía local</h3>
+          <p class="small">Mejoran la empleabilidad y permiten que más personas aporten a la economía local.</p>
+        </div>
+        <div>
+          <h3>Participación ciudadana</h3>
+          <p class="small">Personas bien formadas participan con más eficacia en procesos sociales y comunitarios.</p>
+        </div>
+      </div>
+
+      <div style="margin-top:12px" class="reflect">
+        <strong>Impacto en la vida diaria:</strong>
+        <p class="small">Buenos hábitos de estudio se traducen en decisiones informadas, mejor resolución de problemas comunitarios y proyectos colectivos más exitosos.</p>
+      </div>
+    </section>
+
+    <section id="ejemplos" class="card examples">
+      <h2>Ejemplos prácticos</h2>
+      <img class="responsive" src="images/ejemplos.svg" alt="Ilustración: sesión de capacitación comunitaria"/>
+      <div class="grid" style="margin-top:12px">
+        <div class="example">
+          <strong>Clubes de estudio en barrios</strong>
+          <p class="small">Espacios dirigidos por voluntarios donde jóvenes practican técnicas de estudio y reciben apoyo académico.</p>
+        </div>
+        <div class="example">
+          <strong>Talleres para padres</strong>
+          <p class="small">Capacitaciones que enseñan cómo acompañar los hábitos de estudio de los hijos en casa.</p>
+        </div>
+        <div class="example">
+          <strong>Programas escolares con rutinas</strong>
+          <p class="small">Escuelas que integran horarios de estudio, rutinas y seguimiento personalizado.</p>
+        </div>
+        <div class="example">
+          <strong>Capacitaciones para educadores</strong>
+          <p class="small">Formación docente centrada en métodos para enseñar hábitos y motivación al estudio.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="conclusion" class="card">
+      <h2>Conclusión y reflexión</h2>
+      <p>Incorporar hábitos de estudio en programas de formación no solo mejora el aprendizaje individual sino que fortalece el tejido social. Piensa en un hábito sencillo que puedas promover esta semana: ¿un club de lectura, sesiones de estudio guiado o talleres para padres?</p>
+      <img class="responsive" src="images/conclusion.svg" alt="Ilustración: lectura comunitaria"/>
+      <div style="margin-top:10px;display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="window.print()" class="btn">Exportar/Imprimir</button>
+        <a class="btn" href="#recursos" style="background:#06b6d4">Ver recursos</a>
+      </div>
+    </section>
+
+    <section id="recursos" class="card resources">
+      <h2>Recursos</h2>
+      <p class="small">Enlaces, guías y plantillas para diseñar programas que desarrollen hábitos de estudio.</p>
+      <a href="#">Guía práctica: Cómo estructurar hábitos de estudio (PDF)</a>
+      <a href="#">Plantilla de planificación de un club de estudio</a>
+      <a href="#">Videos: técnicas efectivas de estudio</a>
+
+      <h3 style="margin-top:12px">Plantilla de planificación</h3>
+      <p class="small">Usa esta estructura básica para planear acciones en tu comunidad:</p>
+      <ul>
+        <li>Nombre de la iniciativa</li>
+        <li>Objetivo general y específicos</li>
+        <li>Población objetivo y horarios</li>
+        <li>Actividades semanales y duración</li>
+        <li>Recursos y roles (voluntarios, materiales)</li>
+        <li>Mecanismos de evaluación y seguimiento</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Contacto</h2>
+      <p class="small">Si quieres que adapte este contenido a una presentación, PDF o a una web en WordPress/HTML, escríbeme y lo hago.</p>
+      <form onsubmit="event.preventDefault(); alert('Formulario de ejemplo — en una web real aquí se enviaría la información.');" aria-label="Formulario de contacto">
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <input type="text" name="nombre" placeholder="Tu nombre" required style="flex:1;padding:10px;border-radius:8px;border:1px solid #e6eefc">
+          <input type="email" name="email" placeholder="Correo" required style="flex:1;padding:10px;border-radius:8px;border:1px solid #e6eefc">
+        </div>
+        <textarea name="mensaje" placeholder="¿Qué necesitas?" required style="width:100%;margin-top:8px;padding:10px;border-radius:8px;border:1px solid #e6eefc;min-height:100px"></textarea>
+        <div style="margin-top:8px"><button class="btn" type="submit">Enviar</button></div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="container">
+    <div style="border-top:1px solid #eef6ff;padding-top:12px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+      <div class="small">© Hábitos de Estudio — Página educativa. Contenido e ilustraciones vectoriales incluidas.</div>
+      <div class="small">Imágenes: ilustraciones SVG creadas para uso libre.</div>
+    </div>
+  </footer>
+</body>
+</html>
